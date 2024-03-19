@@ -7,3 +7,18 @@
 <h2>Property Binding</h2>
 <button [disabled]="isDisabled">Submit</button>
 <!-- <img [src]="srcImage" [alt]="altImage" [title]="titleImage"> -->
+
+<p [class.background-red]="age >= 29" [class.background-blue]="age <= 29">{{ nome }}</p>
+
+
+Idade : {{ age }} 
+<button (click)="sum()">+</button>
+<button (click)="sub()">-</button>
+
+
+<br>
+
+<label for="name">
+    <input type="text" [(ngModel)]="nome">
+</label>
+{{ nome }}
