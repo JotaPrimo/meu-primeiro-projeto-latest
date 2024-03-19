@@ -4,21 +4,8 @@
 
 <hr>
 
-<h2>Property Binding</h2>
-<button [disabled]="isDisabled">Submit</button>
-<!-- <img [src]="srcImage" [alt]="altImage" [title]="titleImage"> -->
+<h3>Diretivas de atributo</h3>
 
-<p [class.background-red]="age >= 29" [class.background-blue]="age <= 29">{{ nome }}</p>
+<div [ngClass]="{ 'background-red': true }">Classes condicionais</div>
 
-
-Idade : {{ age }} 
-<button (click)="sum()">+</button>
-<button (click)="sub()">-</button>
-
-
-<br>
-
-<label for="name">
-    <input type="text" [(ngModel)]="nome">
-</label>
-{{ nome }}
+<div>Estilo dinamico</div>
