@@ -1,10 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+// components
+import { TesteComponent } from '../teste/teste.component';
+
 @Component({
   selector: 'app-new-component',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TesteComponent],
   templateUrl: './new-component.component.html',
   styleUrl: './new-component.component.scss'
 })
